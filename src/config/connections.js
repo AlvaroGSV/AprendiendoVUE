@@ -1,4 +1,4 @@
-const mysql = require('mysql');
+const mysql = require('mysql')
 
 const objectConnection = {
     "host": "127.0.0.1",
@@ -8,14 +8,14 @@ const objectConnection = {
     "database": "crud_node1"
 }
 
-const myConn = mysql.createConnection(objectConnection);
+const myConn = mysql.createConnection(objectConnection)
 
 myConn.connect((error) => {
     if(error){
-        console.log("ha ocurrido un error", error);
+        console.log("ha ocurrido un error", error)
     }else{
-        console.log("base de datos conectada");
+        console.log("base de datos conectada")
     }
 })
 
-module.exports = myConn;
+module.exports = myConn

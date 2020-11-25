@@ -1,6 +1,6 @@
-create database crud_node1;
+create database crud_node1
 
-use crud_node1;
+use crud_node1
 
 create table personas(
     id INT NOT NULL auto_increment,
@@ -10,6 +10,6 @@ create table personas(
     primary key(id)
 )
 
-select * from personas;
+select * from personas
 
 insert into personas(nombre,direccion,telefono) values ('LB','Direccio de LB', '6675029622')
