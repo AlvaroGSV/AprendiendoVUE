@@ -6,6 +6,10 @@
         hover 
         :items="items" 
         :fields="fields"
+        >
+        <template #cells(actions)="data">
+          <slot name="actions" :item="data"></slot>
+        </template>
     ></b-table>
   </div>
 </template>
