@@ -2,6 +2,7 @@
   <div class="home">
     <h1>PERSONAS</h1>
     <p>Aqui se mostrara una vista de las personas en la base de datos</p>
+    <b-button to="/AddPerson" pill variant="primary" class="m-2 float-right">Nueva personas</b-button>
     <Table :fields="fields" :items="allPersonas"/>
   </div>
 </template>
